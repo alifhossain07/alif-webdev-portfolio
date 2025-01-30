@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 /* Import Anurati from the public/fonts folder */
 @font-face {
   font-family: "Anurati";
@@ -20,19 +17,31 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal scrolling */
 html, body {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  
 }
 
+
+.bg-soft-white {
+  background-color: #faf3e0; /* Very soft off-white */
+}
+
+
 /* Font Classes */
+
+/* Font for Titles - Using Quantico */
 .font-title {
   font-family: var(--font-quantico), sans-serif; /* Quantico for titles */
 }
 
+/* Font for Body Text - Using Rubik */
 .font-text {
   font-family: var(--font-rubik), sans-serif; /* Rubik for body text */
 }
 
+/* Font for Logo - Using Anurati */
 .font-logo {
   font-family: "Anurati", sans-serif; /* Anurati for the logo */
 }
