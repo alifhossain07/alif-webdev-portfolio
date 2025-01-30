@@ -2,20 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+/* Import Anurati from the public/fonts folder */
+@font-face {
+  font-family: "Anurati";
+  src: url("/fonts/Anurati-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Font Classes */
+.font-title {
+  font-family: var(--font-quantico), sans-serif; /* Quantico for titles */
+}
+
+.font-text {
+  font-family: var(--font-rubik), sans-serif; /* Rubik for body text */
+}
+
+.font-logo {
+  font-family: "Anurati", sans-serif; /* Anurati for the logo */
 }
