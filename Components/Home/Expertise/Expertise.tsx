@@ -27,28 +27,28 @@ export const projects = [
     title: "Web Development",
     description:
       "As a Front End Developer, I create clean, attractive websites with smooth, functional feature",
-    link: "#",
+    link: "https://allinfozone.tech",
   },
   {
     icon: "/image/Uiicon.png",
     title: "UI/UX Design",
     description:
       "As a UI/UX Designer, I create simple and attractive designs that are easy for users to navigate",
-    link: "#",
+    link: "https://allinfozone.tech/contact",
   },
   {
     icon: "/image/WordpressIcon.png",
     title: "Wordpress Design",
     description:
       "As a WordPress Designer, I create custom websites that are easy to manage and look great..",
-    link: "#",
+    link: "https://allinfozone.tech/services",
   },
   {
     icon: "/image/ContentManagementIcon.png",
     title: "Content Management",
     description:
       "As a Content Manager, I handle social media, create posts, and design banners to boost your brand",
-    link: "#",
+    link: "https://allinfozone.tech/projects",
   },
   
 ];
