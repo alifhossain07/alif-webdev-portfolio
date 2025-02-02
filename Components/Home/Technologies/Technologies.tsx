@@ -25,7 +25,7 @@ const Technologies = () => {
   closeDelay={0}
   content={
     <div className="px-1 py-2">
-      <div className="text-small font-title text-sky-500 font-bold">HTML5</div>
+      <div className="text-small font-title font-title text-sky-500 font-bold">HTML5</div>
       <div className="text-tiny">Frontend Development</div>
     </div>
   }
@@ -49,7 +49,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">CSS3</div>
+              <div className="text-small font-title font-bold">CSS3</div>
               <div className="text-tiny">Frontend Development</div>
             </div>
           }
@@ -73,7 +73,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">JavaScript</div>
+              <div className="text-small font-title font-bold">JavaScript</div>
               <div className="text-tiny">Frontend & Backend Development</div>
             </div>
           }
@@ -97,7 +97,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">React.js</div>
+              <div className="text-small font-title font-bold">React.js</div>
               <div className="text-tiny">Frontend Development</div>
             </div>
           }
@@ -121,7 +121,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">Tailwind CSS</div>
+              <div className="text-small font-title font-bold">Tailwind CSS</div>
               <div className="text-tiny">Frontend Styling</div>
             </div>
           }
@@ -145,7 +145,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">TypeScript</div>
+              <div className="text-small font-title font-bold">TypeScript</div>
               <div className="text-tiny">Frontend & Backend Development</div>
             </div>
           }
@@ -169,7 +169,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">Next.js</div>
+              <div className="text-small font-title font-bold">Next.js</div>
               <div className="text-tiny">Full-Stack Development</div>
             </div>
           }
@@ -193,7 +193,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">Node.js</div>
+              <div className="text-small font-title font-bold">Node.js</div>
               <div className="text-tiny">Backend Development</div>
             </div>
           }
@@ -218,7 +218,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">Express.js</div>
+              <div className="text-small font-title font-bold">Express.js</div>
               <div className="text-tiny">Backend Development</div>
             </div>
           }
@@ -242,7 +242,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">MongoDB</div>
+              <div className="text-small font-title font-bold">MongoDB</div>
               <div className="text-tiny">Database Management</div>
             </div>
           }
@@ -266,7 +266,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">Figma</div>
+              <div className="text-small font-title font-bold">Figma</div>
               <div className="text-tiny">UI/UX Design</div>
             </div>
           }
@@ -290,7 +290,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">Canva</div>
+              <div className="text-small font-title font-bold">Canva</div>
               <div className="text-tiny">Graphic Design</div>
             </div>
           }
@@ -314,7 +314,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">WordPress</div>
+              <div className="text-small font-title font-bold">WordPress</div>
               <div className="text-tiny">Website Development</div>
             </div>
           }
@@ -338,7 +338,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">Elementor</div>
+              <div className="text-small font-title font-bold">Elementor</div>
               <div className="text-tiny">Page Building</div>
             </div>
           }
@@ -362,7 +362,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">WooCommerce</div>
+              <div className="text-small font-title font-bold">WooCommerce</div>
               <div className="text-tiny">E-commerce Development</div>
             </div>
           }
@@ -385,7 +385,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">CapCut</div>
+              <div className="text-small font-title font-bold">CapCut</div>
               <div className="text-tiny">Video Editing</div>
             </div>
           }
@@ -408,7 +408,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">VS Code</div>
+              <div className="text-small font-title font-bold">VS Code</div>
               <div className="text-tiny">For Coding</div>
             </div>
           }
@@ -431,7 +431,7 @@ const Technologies = () => {
           closeDelay={0}
           content={
             <div className="px-1 py-2">
-              <div className="text-small font-bold">GitHub</div>
+              <div className="text-small font-title font-bold">GitHub</div>
               <div className="text-tiny">Version Control</div>
             </div>
           }
