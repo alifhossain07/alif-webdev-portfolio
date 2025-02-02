@@ -1,61 +1,451 @@
 "use client";
+import { Tooltip } from "@heroui/tooltip";
+import Image from "next/image";
 
 const Technologies = () => {
   return (
-    <div className=" bg-soft-white py-20">
+    <div className="bg-soft-white py-20">
       <div className="text-center">
-        <h1 className="text-center text-4xl font-bold font-title">
+        <h1 className="text-4xl font-bold font-title">
           <span className="text-sky-500">Technologies</span> & Tools
         </h1>
-        <p className="text-center w-5/12 mx-auto text-gray-600 font-text mt-5 text-2xl tracking-wider">
-          Skills and Resources I Use to Create Websites, WordPress Designs, and
-          Manage Content
+        <p className="text-2xl mx-auto mt-5 text-gray-600 tracking-wider max-w-4xl">
+          Skills and Resources I Use to Create Websites, WordPress Designs, and Manage Content
         </p>
       </div>
 
-      {/* Central Div to Include the Tools and Technologies */}
-      <div className="w-10/12 mx-auto flex flex-col">
-        {/* 6 divs to add 6 categories of skills and tools */}
-        <div className="flex justify-between gap-8 mt-10">
-          <div>
-            <h1 className="font-title text-2xl tracking-wide">Frontend Development</h1>
+      {/* Single div with flexbox to handle two rows */}
+      <div className="flex flex-wrap gap-16 justify-center w-10/12 mt-20 mx-auto">
+        {/* First 10 icons */}
+        <Tooltip
+  classNames={{
+    base: ["before:bg-neutral-400 dark:before:bg-white"],
+    content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+  }}
+  closeDelay={0}
+  content={
+    <div className="px-1 py-2">
+      <div className="text-small font-title text-sky-500 font-bold">HTML5</div>
+      <div className="text-tiny">Frontend Development</div>
+    </div>
+  }
+>
+  <div className="flex justify-center items-center mb-4">
+    <Image
+      src="https://i.ibb.co.com/tNg0DLZ/html5-original.png"
+      alt="HTML5"
+      width={80}
+      height={80}
+      className="object-contain  transition-all duration-300 ease-in-out transform hover:scale-110 "
+    />
+  </div>
+</Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">CSS3</div>
+              <div className="text-tiny">Frontend Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/n80JZMbc/css3-original.png"
+              alt="CSS3"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
           </div>
-          <div>
-            <h1>All the Icons</h1>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">JavaScript</div>
+              <div className="text-tiny">Frontend & Backend Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/MKjLHrC/javascript-original.png"
+              alt="JavaScript"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
           </div>
-        </div>
-        <div className="flex justify-between gap-8 mt-10">
-          <div>
-            <h1 className="font-title text-2xl tracking-wide">Backend Development</h1>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">React.js</div>
+              <div className="text-tiny">Frontend Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/nNt2WRym/react-original.png"
+              alt="React.js"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
           </div>
-          <div>
-            <h1>All The Icons</h1>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">Tailwind CSS</div>
+              <div className="text-tiny">Frontend Styling</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/qMGLDKf3/tailwindcss-plain.png"
+              alt="Tailwind CSS"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
           </div>
-        </div>
-        <div className="flex justify-between gap-8 mt-10">
-          <div>
-            <h1 className="font-title text-2xl tracking-wide">UI/UX Design</h1>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">TypeScript</div>
+              <div className="text-tiny">Frontend & Backend Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/bMbMvvn6/typescript-plain.png"
+              alt="TypeScript"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
           </div>
-          <div>
-            <h1>All The Icons</h1>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">Next.js</div>
+              <div className="text-tiny">Full-Stack Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/VcQLCmNp/nextjs-line.png"
+              alt="Next.js"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
           </div>
-        </div>
-        <div className="flex justify-between gap-8 mt-10">
-          <div>
-            <h1 className="font-title text-2xl tracking-wide">Wordpress Design</h1>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">Node.js</div>
+              <div className="text-tiny">Backend Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/Xkd90DWD/nodelogo.png"
+              alt="Node.js"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
           </div>
-          <div>
-            <h1 >All The Icons</h1>
+        </Tooltip>
+
+        {/* Second row of 8 icons */}
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">Express.js</div>
+              <div className="text-tiny">Backend Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/MkjpNtgH/express-original-wordmark1.png"
+              alt="Express.js"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
           </div>
-        </div>
-        <div className="flex justify-between gap-8 mt-10">
-          <div><h1 className="font-title text-2xl tracking-wide">Content Management</h1></div>
-          <div><h1>all the icons</h1> </div>
-        </div>
-        <div className="flex justify-between gap-8 mt-10">
-          <div> <h1 className="font-title text-2xl tracking-wide">Essentials</h1></div>
-          <div><h1>All the Icons</h1></div>
-        </div>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">MongoDB</div>
+              <div className="text-tiny">Database Management</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/VsQSW7P/mongodb-original-wordmark.png"
+              alt="MongoDB"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">Figma</div>
+              <div className="text-tiny">UI/UX Design</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/rGHMQ3KZ/figma-original.png"
+              alt="Figma"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">Canva</div>
+              <div className="text-tiny">Graphic Design</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/wZTBQbYT/canva-original.png"
+              alt="Canva"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">WordPress</div>
+              <div className="text-tiny">Website Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/35D4FXLj/wordpress-plain.png"
+              alt="WordPress"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">Elementor</div>
+              <div className="text-tiny">Page Building</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/0b7DX6Z/elementor-Logo.png"
+              alt="Elementor"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
+
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">WooCommerce</div>
+              <div className="text-tiny">E-commerce Development</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/GDPnCs1/woocommerce-original.png"
+              alt="WooCommerce"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">CapCut</div>
+              <div className="text-tiny">Video Editing</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/LXft9Djq/capcut-logo.png"
+              alt="WooCommerce"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">VS Code</div>
+              <div className="text-tiny">For Coding</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/BVWjy0fB/vscode-original.png"
+              alt="WooCommerce"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
+        <Tooltip
+          classNames={{
+            base: ["before:bg-neutral-400 dark:before:bg-white"],
+            content: ["py-2 px-4 shadow-xl", "text-white bg-black"],
+          }}
+          closeDelay={0}
+          content={
+            <div className="px-1 py-2">
+              <div className="text-small font-bold">GitHub</div>
+              <div className="text-tiny">Version Control</div>
+            </div>
+          }
+        >
+          <div className="flex justify-center items-center mb-4">
+            <Image
+              src="https://i.ibb.co.com/mrfHpr89/Github-Icon.png"
+              alt="WooCommerce"
+              width={80}
+              height={80}
+              className="object-contain transition-all duration-300 ease-in-out transform hover:scale-110"
+            />
+          </div>
+        </Tooltip>
       </div>
     </div>
   );
