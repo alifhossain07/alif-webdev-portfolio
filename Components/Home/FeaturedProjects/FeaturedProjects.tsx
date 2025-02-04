@@ -133,14 +133,14 @@ const FeaturedProjects = () => {
             <div className="pb-0 pt-2 px-4 gap-5 flex">
               <Button
                 className="capitalize"
-                color="warning"
-                variant="flat"
+                color="primary"
+                variant="solid"
                 onClick={() => handleOpen(project)} // Open modal when button is clicked
               >
                 See Details
               </Button>
 
-              <Button color="primary" variant="ghost" href={project.websiteLink}>
+              <Button color="success" variant="ghost" href={project.websiteLink}>
                 Go To Website
               </Button>
             </div>
@@ -176,7 +176,7 @@ const FeaturedProjects = () => {
         ))}
       </ModalBody>
       <ModalFooter className="flex justify-between">
-        <Button color="danger" variant="light" onPress={onClose}>
+        <Button color="danger" variant="bordered" onPress={onClose}>
           Close
         </Button>
         <Link  href={projectDetails.websiteLink} passHref > <Button className='font-text' color="primary" target='_blank' onPress={onClose}>
