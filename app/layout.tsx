@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Quantico, Rubik } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Shared/Navbar/Navbar";
+import Footer from './Shared/Footer/Footer';
 
 
 /* Load Google Fonts */
@@ -33,6 +34,7 @@ export default function RootLayout({
         <div suppressHydrationWarning>
          <Navbar></Navbar>
           {children}
+          <Footer></Footer>
           
         </div>
       </body>

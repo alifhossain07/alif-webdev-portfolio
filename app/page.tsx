@@ -1,5 +1,6 @@
 
 
+import Contact from "@/Components/Home/Contact/Contact";
 import Expertise from "@/Components/Home/Expertise/Expertise";
 import FeaturedProjects from "@/Components/Home/FeaturedProjects/FeaturedProjects";
 import Hero from "@/Components/Home/Hero/Hero";
@@ -17,6 +18,7 @@ export default function Home() {
       <Technologies></Technologies>
       <FeaturedProjects></FeaturedProjects>
       <Testimonials></Testimonials>
+      <Contact></Contact>
       
     </div>
   );
