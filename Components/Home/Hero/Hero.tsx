@@ -12,34 +12,41 @@ const Hero = () => {
   const thirdline = [
     {
       text: "I",
-      className: "font-title text-5xl dark:text-black ",
+      className: "font-title text-3xl  lg:text-5xl dark:text-black ",
     },
     {
       text: "am",
-      className: "font-title text-5xl dark:text-black ",
+      className: "font-title text-3xl  lg:text-5xl  dark:text-black ",
     },
     {
       text: "Alif",
-      className: "font-title text-5xl dark:text-black ",
+      className: "font-title text-3xl  lg:text-5xl  dark:text-black ",
     },
   ];
 
   const words = ["Front End Developer", "Wordpress Designer", "UI/UX Designer", "Content Manager"];
 
   return (
-    <div className="bg-soft-white pt-40 pb-20">
-      <div className="flex justify-around items-center w-11/12 mx-auto py-20">
-      <div>
+    <div className="bg-soft-white pt-20 lg:pt-40 pb-20">
+      <div className="flex  lg:flex-row flex-col-reverse justify-around items-center w-11/12 mx-auto py-20">
+      <div className="mt-10 lg:mt-0">
 
-      <div className="space-y-5 font-title">
-          <h1 className="text-5xl">Hi....</h1>
+      <div className=" font-title lg:text-left text-center">
+          <h1 className=" text-3xl lg:text-5xl">Hi....</h1>
           
-         <TypewriterEffectSmooth className="text-5xl font-bold font-title" words={thirdline} />
-          <FlipWords className="text-5xl font-bold font-title" words={words} /> 
+          
+          <div className="flex lg:justify-start justify-center">
+      <TypewriterEffectSmooth
+        className="text-3xl lg:text-5xl font-bold font-title"
+        words={thirdline}
+      />
+    </div>
+
+          <FlipWords className="lg:text-5xl text-3xl font-bold font-title" words={words} /> 
           
         </div>
 
-        <div className="flex items-center mt-8 gap-8">
+        <div className="flex items-center lg:mt-8 gap-8">
   <button className="group">
     <Image
       src={Facebook}
@@ -85,9 +92,13 @@ const Hero = () => {
 
       </div>
         
-        <div>
-          <Image src={PortfolioImage} alt="Portfolio Image" />
-        </div>
+      <div>
+  <Image
+    src={PortfolioImage}
+    alt="Portfolio Image"
+    className="lg:w-full w-9/12 mx-auto "
+  />
+</div>
       </div>
     </div>
   );
