@@ -1,0 +1,127 @@
+[
+    {
+      "title": "Nexa Developments LTD",
+      "tech": "NEXT JS",
+      "category": "Real Estate Website",
+      "description": "The Nexa Developments Limited website, built with Next.js, showcases projects like Nexa Skyline with a responsive design and easy navigation.",
+      "longDescription": [
+        {
+          "title": "Project Summary",
+          "content": "The Nexa Developments Limited website, built with Next.js, is a modern real estate platform that showcases the company’s vision, projects, and customer-centric services. Key highlights include:\n\nHomepage: Introduction to core values like sustainability and prime locations.\nProperties Section: Detailed project information, including the flagship Nexa Skyline in Mohammadpur, Dhaka.\nContact Page: Easy navigation with Google Maps integration.\nProject Details: Comprehensive overviews, specifications, and transparent policies.\nFooter: Quick links and credits to Allinfozone IT Solutions for development.\n\nThe site combines functionality with responsive design for a seamless user experience."
+        },
+        {
+          "title": "Tools Used",
+          "content": "Framework: Next.js – For server-side rendering and optimized performance.\nStyling: Tailwind CSS – For modern, responsive design with minimal effort.\nUI Components: Flowbite – Pre-designed components for faster development.\nMapping: Google Maps Integration – For precise location details."
+        }
+      ],
+      "image": "/image/projects/Nexa Developments/Hero Section Mockup.png",
+      "websiteLink": "https://nexadevelopments.com/",
+      "type": "web development"
+    },
+    {
+      "title": "Trendy Boutique",
+      "tech": "React JS, Express JS",
+      "category": "E-commerce Clothing Store",
+      "description": "The Trendy Boutique website, built with React and MongoDB, offers a seamless shopping experience with secure transactions and real-time updates.",
+      "longDescription": [
+        {
+          "title": "Project Summary",
+          "content": "Trendy Boutique is an online fashion platform designed to provide a seamless shopping experience for style enthusiasts. With a focus on intuitive navigation and secure transactions, the platform offers:\n\nHomepage: A visually appealing introduction to the latest fashion trends and collections.\nProduct Listings: Well-organized shop pages showcasing men’s and women’s clothing and accessories, complete with detailed descriptions and real-time stock updates.\nCart and Wishlist: Features allowing users to save and manage their favorite items effortlessly.\nCheckout Process: Secure, user-friendly checkout with encrypted payment integration.\nAdmin Dashboard: A backend solution for inventory management, product updates, and stock monitoring.\n\nBuilt using modern technologies like React, Tailwind CSS, Express.js, MongoDB, and Firebase, Trendy Boutique delivers a responsive and engaging e-commerce experience."
+        },
+        {
+          "title": "Tools Used",
+          "content": "Frontend: React – For a dynamic, interactive user interface.\nStyling: Tailwind CSS – For responsive, modern design.\nBackend: Express.js – For robust server-side logic and API development.\nDatabase: MongoDB – For flexible and scalable product and user data storage."
+        }
+      ],
+      "image": "/image/projects/Trendy Boutique/Homepage Mockup.png",
+      "websiteLink": "https://trendy-boutique-client.web.app/",
+      "type": "web development"
+    },
+    {
+      "title": "BeamLOL",
+      "tech": "React JS, Tailwind CSS",
+      "category": "Gaming Platform Landing Page",
+      "description": "BeamLOL, built with React and Tailwind CSS, combines gaming, earning, and trading with crypto rewards and premium benefits for an engaging user experience.",
+      "longDescription": [
+        {
+          "title": "Project Summary",
+          "content": "BeamLOL is a comprehensive gaming, earning, and trading platform designed with React, Tailwind CSS, and Flowbite. The platform provides an engaging and rewarding experience through gamification, cryptocurrency adoption, and integration with leading tech platforms. Key features include giveaways, premium perks, crypto rewards, and gaming challenges that offer coins, stars, and crypto prizes. BeamLOL's ecosystem has over 50 million users, ensuring a vast user base with engaging and rewarding features."
+        },
+        {
+          "title": "Tools Used",
+          "content": "Frontend Framework: React – For dynamic and component-based development.\nStyling: Tailwind CSS – To create responsive and modern UI elements.\nUI Components: Flowbite – For pre-built, accessible components that accelerate development.\nBackend Integration: API-based connections for real-time user stats, trade prices, and game features."
+        }
+      ],
+      "image": "/image/projects//BeamLOL/Homepage Mockup.png",
+      "websiteLink": "https://beamlol.club/",
+      "type": "web development"
+    },
+    {
+      "title": "Digital Insights",
+      "tech": "React JS, Express JS, MongoDB",
+      "category": "Tech Blog Platform",
+      "description": "Digital Insights, built with React and Tailwind CSS, is a tech blog platform offering easy content creation, secure access, and a seamless user experience across devices.",
+      "longDescription": [
+        {
+          "title": "Project Summary",
+          "content": "Digital Insights is a tech-focused blog platform designed to encourage knowledge sharing among tech enthusiasts. Built using React, Tailwind CSS, and Flowbite, this platform allows users to create, share, and discover blogs with ease. Key features include a rich text editor for visually engaging blog posts, content categorization and tagging for easy navigation, role-based access control for secure content moderation, advanced search functionality to find blogs quickly, and a responsive design for a seamless experience across all devices."
+        },
+        {
+          "title": "Tools Used",
+          "content": "Frontend Framework: React – For dynamic and responsive UI components.\nStyling: Tailwind CSS – For modern, responsive design, and Flowbite for pre-built UI components.\nDatabase: MongoDB – To store and organize blogs by categories and tags.\nAuthentication: Firebase – For secure user authentication and role-based access control.\nSearch Optimization: Backend query system – For indexing and filtering content.\nDeployment: Vercel – For hosting and deployment of the platform."
+        }
+      ],
+      "image": "/image/projects/Digital Insights/Homepage Mockup.png",
+      "websiteLink": "https://digital-insights-client.web.app/",
+      "type": "web development"
+    },
+    {
+        "title": "Augmented Reality Equipment Shop",
+        "tech": "Figma",
+        "category": "UI/UX Design",
+        "description": "A landing page design for an Augmented Reality equipment shop, focusing on a modern and immersive UI/UX experience. Designed using Figma, it showcases various AR products with smooth interactions and a clean layout.",
+        "longDescription": [
+          {
+            "title": "Project Summary",
+            "content": "The Augmented Reality Equipment Shop landing page design focuses on a user-friendly interface with an emphasis on showcasing different AR products. The design includes sections like an interactive hero area, product listings with hover effects, and a clear call-to-action for users to explore and purchase products. The layout is optimized for both desktop and mobile experiences, ensuring accessibility and smooth navigation."
+          },
+          {
+            "title": "UI Design",
+            "content": "The UI design incorporates a clean, minimalist aesthetic with a tech-forward approach. The use of bold typography, dark and vibrant color schemes, and interactive elements helps create an engaging user experience. The hero section is visually impactful, with prominent product imagery and action buttons that guide users towards the main goals—browsing and purchasing AR products."
+          },
+          {
+            "title": "UX Design",
+            "content": "The UX design is focused on usability and engagement. It provides intuitive navigation with hover effects on product images, quick preview modals for each product, and a simplified purchase flow. The website's user experience aims to lead users smoothly through the page, emphasizing essential interactions and minimizing distractions."
+          }
+        ],
+        "image": "/image/projects/AR shop/arshop.png",
+        "websiteLink": "https://www.behance.net/gallery/217841435/Augmented-Reality-Equipment-Shop-Landing-Page",
+        "type": "UI/UX Design"
+      },
+      {
+        "title": "BOXCLUB - Boxing Coaching Classes",
+        "tech": "Figma",
+        "category": "UI/UX Design",
+        "description": "A landing page design for BOXCLUB, a boxing coaching classes website. Designed in Figma, it features a dynamic and action-packed UI/UX experience, emphasizing strength, training programs, and expert coaching.",
+        "longDescription": [
+          {
+            "title": "Project Summary",
+            "content": "The BOXCLUB landing page design is focused on creating an energetic and motivational experience for users interested in boxing training. The design includes sections like a bold hero area, training program highlights, coach profiles, and a call-to-action for joining classes. The layout is optimized for both desktop and mobile, ensuring seamless navigation."
+          },
+          {
+            "title": "UI Design",
+            "content": "The UI design utilizes a bold and athletic aesthetic with strong typography, a dark and fiery color scheme, and high-impact imagery. The hero section features an engaging call-to-action, while the overall design maintains a structured yet dynamic flow, reinforcing the intensity of boxing training."
+          },
+          {
+            "title": "UX Design",
+            "content": "The UX design prioritizes easy access to key information, such as class schedules, training benefits, and membership options. Smooth navigation, interactive hover effects, and a clear enrollment process ensure that users can quickly find and sign up for classes with minimal friction."
+          }
+        ],
+        "image": "/image/projects/Boxclub/boxclub.png",
+        "websiteLink": "https://www.behance.net/gallery/217845265/BoxClub-Boxing-Club-Landing-Page?tracking_source=project_owner_other_projects",
+        "type": "UI/UX Design"
+      }
+      
+      
+  ]
+  
