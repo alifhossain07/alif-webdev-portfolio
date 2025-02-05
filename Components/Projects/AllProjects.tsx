@@ -31,6 +31,8 @@ const AllProjects = () => {
       <Tabs
         aria-label="Options"
         selectedKey={selected}
+         /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+        //@ts-ignore
         onSelectionChange={setSelected}
         size="lg"
         color="primary"
