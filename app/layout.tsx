@@ -32,7 +32,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${quantico.variable} ${rubik.variable} antialiased`}>
         <div suppressHydrationWarning>
-         <Navbar></Navbar>
+          
+<Navbar ></Navbar>
+          
+         
           {children}
           <Footer></Footer>
           

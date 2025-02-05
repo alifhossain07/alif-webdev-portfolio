@@ -27,7 +27,7 @@ const Hero = () => {
   const words = ["Front End Developer", "Wordpress Designer", "UI/UX Designer", "Content Manager"];
 
   return (
-    <div className="bg-soft-white pb-20">
+    <div className="bg-soft-white pt-40 pb-20">
       <div className="flex justify-around items-center w-11/12 mx-auto py-20">
       <div>
 
