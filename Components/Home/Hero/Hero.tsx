@@ -46,7 +46,7 @@ const Hero = () => {
           
         </div>
 
-        <div className="flex items-center lg:mt-8 gap-8">
+        <div className="flex mt-10 lg:w-full w-11/12 mx-auto items-center lg:mt-8 gap-8">
   <button className="group">
     <Image
       src={Facebook}
@@ -83,7 +83,8 @@ const Hero = () => {
       className="transition-transform duration-300 group-hover:scale-110 group-hover:opacity-90"
     />
   </button>
-  <button className="bg-[#07D2FF] px-8 py-2.5 tracking-wider text-xl font-title 
+  
+  <button className="bg-[#07D2FF] px-3 lg:px-8 py-2.5 tracking-wider text-base lg:text-xl font-title 
     transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#07D2FF]/50">
     Resume
   </button>
