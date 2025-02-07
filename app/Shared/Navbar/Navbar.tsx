@@ -1,37 +1,20 @@
-"use client"
+"use client";
 
 import Link from "next/link";
-import { Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@heroui/navbar";
-import React, { useEffect } from "react";
+import { Navbar } from "@heroui/navbar";
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const menuItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Projects", href: "/projects" },
-    { name: "Blogs", href: "/blogs" },
-    { name: "Components", href: "/component" },
-    { name: "Hire Me", href: "/contact" },
-  ];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to handle menu item click
-  const handleMenuItemClick = () => {
-    setIsMenuOpen(false); // Close the menu on item click
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
-  // Effect to handle body overflow when the menu is open
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden"; // Disable scroll
-    } else {
-      document.body.style.overflow = "auto"; // Enable scroll when menu is closed
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Cleanup to ensure scroll is enabled
-    };
-  }, [isMenuOpen]);
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <div>
@@ -62,43 +45,60 @@ const Header = () => {
 
       {/* Mobile Navbar */}
       <div className="shadow-2xl lg:hidden fixed w-full z-50 py-6 bg-slate-50">
-        <Navbar className="" onMenuOpenChange={setIsMenuOpen}>
-          <NavbarContent>
-            <NavbarBrand>
-              <h1 className="font-logo uppercase tracking-widest text-2xl">
-                Alif Hossain
-              </h1>
-            </NavbarBrand>
-          </NavbarContent>
+        <Navbar className="flex justify-between items-center w-full mx-auto">
+          {/* Title (Left) */}
+          <h1 className="font-logo uppercase tracking-widest text-3xl">
+            Alif Hossain
+          </h1>
 
-          {/* Dropdown Menu for Mobile */}
-          <NavbarMenu
-            className={`transition-all duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'}`} 
-            style={{ marginTop: '47px' }} // Add margin to push the menu below the navbar
+          {/* Hamburger Menu (Right) */}
+          <button
+            className="bg-transparent border-4"
+            onClick={toggleMenu}
           >
-            {menuItems.map((item, index) => (
-              <NavbarMenuItem key={`${item.name}-${index}`}>
-                <Link
-                  className="w-full text-right" // Align text to the right
-                  href={item.href} // Use correct href for navigation
-                  /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
-        //@ts-ignore
-                  size="lg"
-                  onClick={handleMenuItemClick} // Close the menu when item is clicked
-                >
-                  {item.name}
-                </Link>
-              </NavbarMenuItem>
-            ))}
-          </NavbarMenu>
-
-          {/* Mobile Menu Toggle */}
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu state on click
-            className="sm:hidden"
-          />
+            <GiHamburgerMenu size={32} />
+          </button>
         </Navbar>
+
+        {/* Dropdown Menu */}
+        <div
+          className={`absolute right-4 top-24 bg-sky-300 shadow-lg rounded-lg w-48 z-50 overflow-hidden transition-all duration-300 ease-in-out transform ${
+            isMenuOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
+          }`}
+        >
+          <ul className="list-none font-text p-2">
+            <li className="py-2 px-4 hover:bg-gray-100">
+              <Link href="/" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li className="py-2 px-4 hover:bg-gray-100">
+              <Link href="/about" onClick={closeMenu}>
+                About
+              </Link>
+            </li>
+            <li className="py-2 px-4 hover:bg-gray-100">
+              <Link href="/projects" onClick={closeMenu}>
+                Projects
+              </Link>
+            </li>
+            <li className="py-2 px-4 hover:bg-gray-100">
+              <Link href="/blogs" onClick={closeMenu}>
+                Blogs
+              </Link>
+            </li>
+            <li className="py-2 px-4 hover:bg-gray-100">
+              <Link href="/component" onClick={closeMenu}>
+                Components
+              </Link>
+            </li>
+            <li className="py-2 px-4 hover:bg-gray-100">
+              <Link href="/contact" onClick={closeMenu}>
+                Hire Me
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
